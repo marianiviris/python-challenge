@@ -54,12 +54,12 @@ print()
 # Print into new text document
 output_file = "Resources/PyPoll_electionresults.txt"
 with open(output_file, "w", newline="") as datafile:
-    datafile.write('Election Results')
-    datafile.write("--------------------------")
-    datafile.write(f'Total Votes: {total_votes}')
-    datafile.write("--------------------------")
+    datafile.write('Election Results\n')
+    datafile.write("--------------------------\n")
+    datafile.write(f'Total Votes: {total_votes}\n')
+    datafile.write("--------------------------\n")
     for y in range(len(candidates_unique)):
-        datafile.write(f'{candidates_unique[y]} : {percentage[y]}% ({candidate_vote_count[y]})')
-    datafile.write("--------------------------")
-    datafile.write(f'Winner: {election_winner}')
+        datafile.write(f'{candidates_unique[y]} : {percentage[y]}% ({candidate_vote_count[y]})\n')
+    datafile.write("--------------------------\n")
+    datafile.write(f'Winner: {election_winner}\n')
     datafile.write("--------------------------")

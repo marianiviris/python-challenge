@@ -48,10 +48,10 @@ print()
 # Print into new text document
 outputpath = "Resources/output_budgetdata.txt"
 with open(outputpath, 'w', newline='') as datafile:
-    datafile.write("Financial Analysis")
-    datafile.write("----------------------------")
-    datafile.write(f"Total Months: {months}")
-    datafile.write(f"Total: ${SumProfLoss}")
-    datafile.write(f"Average Change: ${sum(AvgChange)/len(AvgChange)}")
-    datafile.write(f"Greatest Increase in Profits: {greatest_month} (${greatestIncProf})")
+    datafile.write("Financial Analysis\n")
+    datafile.write("----------------------------\n")
+    datafile.write(f"Total Months: {months}\n")
+    datafile.write(f"Total: ${SumProfLoss}\n")
+    datafile.write(f"Average Change: ${sum(AvgChange)/len(AvgChange)}\n")
+    datafile.write(f"Greatest Increase in Profits: {greatest_month} (${greatestIncProf})\n")
     datafile.write(f"Greatest Decrease in Profits: {lowest_month} (${greatestDecProf})")
